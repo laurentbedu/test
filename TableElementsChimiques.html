@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des éléments chimiqes</title>
+    <link rel="shortcut icon" href="./img/puzzle.svg">
+    <link rel="stylesheet" type="text/css" href="./css/TableElementsChimiques.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <header class="titrePage">
+            <h1>Tableau des éléments chimiques</h1>
+        </header>
+        <div></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/TableElementsChimiques.html">Afficher
+                                tous les composants
+                                HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/formulaire.html">Formulaire d'inscription
+                                HTML</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container-fluid">
+
+            <div id="table_div" class="table table-striped">
+
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <ul class="bleu">
+            <li class="rouge">Root element</li>
+            <li class="bleu">Metadata</li>
+            <li class="black">Embedding content</li>
+        </ul>
+    </div>
+
+    <footer style="background-color: aquamarine;">
+        <div class="container" style="background-color: white;">
+            <div class="row">
+                <div class="col-3">
+                    <h6 class="text-uppercase font-weight-bold">A propos de</h6>
+                    <div> <a href="#">Qui sommes nous</a></div>
+                    <a href="#">Nous rejoindre</a>
+                </div>
+                <div class="col-3">qsdsqd</div>
+                <div class="col-3">qsdsqd</div>
+                <div class="col-3">qsdsqd</div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- <script>
+        var mainDiv = document.querySelector('#table_div');
+
+        var componentHTML = ['HTML', 'Base', 'Span', 'Em', 'Table', 'Tr', 'Td', 'Label', 'Select', 'Meter', 'Form', 'Fieldset', 'aside', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6'];
+        /*On calcule le nombre de ligne*/
+        var nbLines = componentHTML.length / 5;
+        /*on arrondit au point supérieur*/
+        nbLines = Math.ceil(nbLines);
+
+        for (var i = 0; i < nbLines; i++) {
+            /*Creation de nos lignes*/
+            var els = document.createElement('div');
+            els.setAttribute("id", "line" + i);
+            els.setAttribute("class", "row");
+            mainDiv.appendChild(els);
+            for (var j = 10 * i; j < 10 * (i + 1); j++) {
+                var texte = componentHTML[j];
+                /*Creation de nos colonnes*/
+               
+                var col = document.createElement('div');
+                col.setAttribute("class", "col c1");
+                col.innerHTML = "<a href='#'>"+ texte+"</a>";
+                els.appendChild(col);
+               
+               
+            }
+        }
+
+
+    </script> -->
+
+    <script src="./js/TableElementsChimiques.js"></script>
+</body>
+
+</html>
